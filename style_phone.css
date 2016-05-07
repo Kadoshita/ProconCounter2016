@@ -1,0 +1,22 @@
+@media screen and (max-width:1000px){
+	body{
+		background-color:#000000;
+	}
+	img{
+		height:64px;
+	}
+	#text{
+		font-size:28px;
+		color:red;
+		text-align:center;
+		vertical-align: middle;
+	}
+	.infiniteslide1{
+		width:100%;
+		vertical-align: middle;
+	}
+	.br:before {
+		content: "\A" ;
+		white-space: pre ;
+	}
+}

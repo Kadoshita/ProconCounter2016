@@ -6,7 +6,7 @@
 
 以下のURLで見れます。
 
-<https://kadoshita.github.io/ProconCounter2016//>
+<https://kadoshita.github.io/ProconCounter2016/>
 
 ### 動作環境
 

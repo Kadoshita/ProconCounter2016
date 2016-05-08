@@ -19,9 +19,9 @@ function myFunc(){
 	countSec = Math.floor ( Msec / 1000);
 	
 	myDisp = "";
-	if ( countDay != 0 ) myDisp += countDay + "日と ";
-	if ( countHour != 0 ) myDisp += countHour + "時間 ";
-	if ( countMin != 0 ) myDisp += countMin + "分 ";
-	myDisp += countSec + "秒";
+	if ( countDay != 0 ) myDisp += '<span class=\"dseg\">'+countDay + "</span>日と ";
+	if ( countHour != 0 ) myDisp += '<span class=\"dseg\">'+countHour + "</span>時間 ";
+	if ( countMin != 0 ) myDisp += '<span class=\"dseg\">'+countMin + "</span>分 ";
+	myDisp += '<span class=\"dseg\">'+countSec + "</span>秒";
 	document.getElementById("countdown").innerHTML = myDisp;
 }

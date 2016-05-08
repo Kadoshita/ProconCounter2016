@@ -1,15 +1,12 @@
 @media screen and (min-width: 999px){
 	body{
 		background-color:#000000;
+		font-size: 64px;
 	}
 	#text{
 		font-size:64px;
 		color:red;
 		text-align:center;
-		vertical-align: middle;
-	}
-	.infiniteslide1{
-		width:100%;
 		vertical-align: middle;
 	}
 }

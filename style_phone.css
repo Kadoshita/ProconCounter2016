@@ -6,10 +6,21 @@
 		height:64px;
 	}
 	#text{
+		background-color: #310D01;
+		height: 140px;
+		width: 90%;
+		position: absolute;
+		top: 30%;
+		bottom: 50%;
+		margin-right: 2%;
+		margin-left: 2%;
 		font-size:28px;
-		color:red;
-		text-align:center;
-		vertical-align: middle;
+		color:#FF7900;
+		display: table-cell;
+		text-align: center;
+		border-style: solid;
+		border-color: #521F00;
+		border-width: 2px;
 	}
 	.br:before {
 		content: "\A" ;

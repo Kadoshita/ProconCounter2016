@@ -19,7 +19,7 @@ function myFunc(){
 	countSec = Math.floor ( Msec / 1000);
 	
 	myDisp = "";
-	if ( countDay != 0 ) myDisp += '<span class=\"dseg\">'+countDay + "</span>日と ";
+	if ( countDay != 0 ) myDisp += '<span class=\"dseg\">'+countDay + "</span>日<span class=\"br\">";
 	if ( countHour != 0 ) myDisp += '<span class=\"dseg\">'+countHour + "</span>時間 ";
 	if ( countMin != 0 ) myDisp += '<span class=\"dseg\">'+countMin + "</span>分 ";
 	myDisp += '<span class=\"dseg\">'+countSec + "</span>秒";

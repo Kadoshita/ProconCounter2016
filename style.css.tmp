@@ -1,0 +1,44 @@
+@media screen and (min-width: 999px){
+	body{
+		background-color:#000000;
+		font-size: 64px;
+		vertical-align: middle;
+	}
+	#content{
+		width: 100%;
+		height: 150%;
+		position: absolute;
+		top: 40%;
+		bottom: 50%;
+		margin-right: 5%;
+		margin-left: 5%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#text{
+		background-color: #310D01;
+		height: 40%;
+		width: 90%;
+		
+		
+		font-size:64px;
+		color:#FF7900;
+		
+		text-align: center;
+		border-style: solid;
+		border-color: #521F00;
+		border-width: 2px;
+	}
+	#prog{
+		width: 100%;
+		height: 10px;
+		transform: rotate(180deg);
+	}
+	#prog::-moz-progress-bar {
+		background-color: #FF7900;
+	}
+	#outp{
+		font-family: DSEG7;
+		font-size: 32px;
+	}
+}

@@ -1,26 +1,31 @@
-@media screen and (max-width:1000px){
+@media screen and (max-width:640px){
 	body{
-		background-color:#000000;
+		background-color: black;
+		font-family: 'Amethysta', serif;
+		font-weight: 900;
 	}
 	img{
-		height:64px;
+		width: 64px;
+		height: 64px;
+	}
+	#content{
+		display: table;
+		width: 100%;
 	}
 	#text{
 		background-color: #310D01;
-		height: 140px;
-		width: 90%;
-		position: absolute;
-		top: 30%;
-		bottom: 50%;
-		margin-right: 2%;
-		margin-left: 2%;
-		font-size:28px;
-		color:#FF7900;
-		display: table-cell;
-		text-align: center;
 		border-style: solid;
 		border-color: #521F00;
 		border-width: 2px;
+		display: table-cell;
+		vertical-align: middle;
+		position:absolute;
+		top: 30%;
+		height: auto;
+		width: 95%;
+		text-align: center;
+		font-size: 24px;
+		color: #FF7900;
 	}
 	.br:before {
 		content: "\A" ;

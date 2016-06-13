@@ -17,6 +17,7 @@
 		width: 98%;
 	}
 	#count1{
+		padding: 10px;
 		background-color: #310D01;
 		border-style: solid;
 		border-color: #521F00;
@@ -28,6 +29,7 @@
 		color: #FF7900;
 	}
 	#count2{
+		padding: 10px;
 		background-color: #310D01;
 		border-style: solid;
 		border-color: #521F00;

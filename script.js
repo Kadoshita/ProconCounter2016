@@ -1,3 +1,6 @@
+var isClick=false;
+var countnum=0;
+
 setInterval("count1()", 1000 );
 setInterval("count2()", 1000 );
 
@@ -135,5 +138,20 @@ function changeColor2(count){
 		count2.style.borderColor="#ff0000";
 		count2.style.color="#ff0000";
 		dialog2.src=("./gif_r.gif");
+	}
+}
+function changeText(){
+	var sinchoku=document.getElementById('sinchoku');
+	countnum++;
+	if(!isClick){
+		sinchoku.innerHTML="進捗ダメです";
+		isClick=true;
+	}
+	else{
+		sinchoku.innerHTML="進捗どうですか?";
+		isClick=false;
+	}
+	if(countnum>10){
+		sinchoku.innerHTML="こんなことしてる暇あるなら働けよ";
 	}
 }

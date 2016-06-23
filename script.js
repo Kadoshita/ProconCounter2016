@@ -34,7 +34,7 @@ function count2(){
 	var date, Year, countYear, tmp, Msec, countDay, countHour, countMin, countSec,
 	date = new Date();
 	Year = date.getFullYear();
-	countYear = new Date( 2016 , 5 , 25 ,00,00,00);
+	countYear = new Date( 2016 , 5 , 25 ,15,00,00);
 	tmp=countYear;
 	Msec = countYear.getTime() - date.getTime();
 	
@@ -142,7 +142,6 @@ function changeColor2(count){
 }
 function changeText(){
 	var sinchoku=document.getElementById('sinchoku');
-	countnum++;
 	if(!isClick){
 		sinchoku.innerHTML="進捗ダメです";
 		isClick=true;
@@ -150,8 +149,5 @@ function changeText(){
 	else{
 		sinchoku.innerHTML="進捗どうですか?";
 		isClick=false;
-	}
-	if(countnum>10){
-		sinchoku.innerHTML="こんなことしてる暇あるなら働けよ";
 	}
 }

@@ -48,7 +48,7 @@ function count2(){
 	Msec -= ( countMin * (1000*60) );
 	
 	countSec = Math.floor ( Msec / 1000);
-	changeColor2(countDay);
+	
 	myDisp = "";
 	if ( countDay != 0 ) myDisp += '<span class=\"dseg\">'+countDay + "</span>日<span class=\"br\">";
 	if ( countHour != 0 ) myDisp += '<span class=\"dseg\">'+countHour + "</span>時間 ";
@@ -99,45 +99,6 @@ function changeColor1(count){
 		count1.style.color="#ff0000";
 		sinchoku.style.color="#ff0000";
 		dialog1.src=("./gif_r.gif");
-	}
-}
-function changeColor2(count){
-	var count2=document.getElementById("count2");
-	var dialog2=document.getElementById("dialog2");
-	if(count>=10){
-		document.body.style.backgroundColor = "#ffffff";
-		count2.style.backgroundColor="#fafafa";
-		count2.style.borderColor="#59b1eb";
-		count2.style.color="#1976d2";
-		dialog2.src=("./gif_b.gif");
-	}
-	else if(count>=5){
-		document.body.style.backgroundColor = "#ffffff";
-		count2.style.backgroundColor="#fafafa";
-		count2.style.borderColor="#8bc34a";
-		count2.style.color="#689f38";
-		dialog2.src=("./gif_g.gif");
-	}
-	else if(count>=3){
-		document.body.style.backgroundColor = "#fafafa";
-		count2.style.backgroundColor="#eeeeee";
-		count2.style.borderColor="#ffeb3b";
-		count2.style.color="#ffa000";
-		dialog2.src=("./gif_y.gif");
-	}
-	else if(count>=2){
-		document.body.style.backgroundColor = "#000000";
-		count2.style.backgroundColor="#310D01";
-		count2.style.borderColor="#521F00";
-		count2.style.color="#FF7900";
-		dialog2.src=("./gif.gif");
-	}
-	else{
-		document.body.style.backgroundColor = "#000000";
-		count2.style.backgroundColor="#000000";
-		count2.style.borderColor="#ff0000";
-		count2.style.color="#ff0000";
-		dialog2.src=("./gif_r.gif");
 	}
 }
 function changeText(){

@@ -10,8 +10,8 @@
 	}
 	#content{
 		position: absolute;
-		margin-top: 2%;
-		margin-bottom: 2%;
+		margin-top: 10%;
+		margin-bottom: 10%;
 		margin-right: 0px;
 		margin-left: 0px;
 		width: 98%;
@@ -31,17 +31,5 @@
 	#sinchoku{
 		font-size: 48px;
 		text-align: center;
-	}
-	#count2{
-		padding: 10px;
-		background-color: #000000;
-		border-style: solid;
-		border-color: #ff0000;
-		border-width: 2px;
-		height: auto;
-		width: 99%;
-		text-align: center;
-		font-size: 64px;
-		color: #ff0000;
 	}
 }

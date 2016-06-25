@@ -10,8 +10,8 @@
 	}
 	#content{
 		position: absolute;
-		margin-top: 5%;
-		margin-bottom: 5%;
+		margin-top: 10%;
+		margin-bottom: 10%;
 		margin-right: 0px;
 		margin-left: 0px;
 		width: 95%;
@@ -30,16 +30,6 @@
 	#sinchoku{
 		font-size: 28px;
 		text-align: center;
-	}
-	#count2{
-		padding: 10px;
-		background-color: #000000;
-		border-style: solid;
-		border-color: #ff0000;
-		border-width: 2px;
-		text-align: center;
-		font-size: 24px;
-		color: #ff0000;
 	}
 	.br:before {
 		content: "\A" ;

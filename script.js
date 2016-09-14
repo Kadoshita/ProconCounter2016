@@ -1,8 +1,8 @@
 var isClick=false;
 var mode=getMode();
-setInterval("count1()", 1000 );
+var counter;
 
-function count1(){
+counter=setInterval(function(){
 	var date, Year, countYear, tmp, Msec, countDay, countHour, countMin, countSec;
 	var br=document.getElementById("newline");
 	date = new Date();
@@ -11,6 +11,9 @@ function count1(){
 	tmp=countYear;
 	Msec = countYear.getTime() - date.getTime();
 	
+	if(Msec<=1000){
+		clearInterval(counter);
+	}
 	countDay = Math.floor ( Msec / (1000*60*60*24) );
 	Msec -= ( countDay * (1000*60*60*24) );
 	
@@ -21,7 +24,7 @@ function count1(){
 	Msec -= ( countMin * (1000*60) );
 	
 	countSec = Math.floor ( Msec / 1000);
-	changeColor1(countDay);
+	changeColor(countDay);
 	myDisp = "";
 	if(mode=="bin"){
 		if(countDay != 0){
@@ -52,8 +55,9 @@ function count1(){
 		document.getElementById("no27").innerHTML="27";
 	}
 	document.getElementById("countdown1").innerHTML = myDisp;
-}
-function changeColor1(count){
+}, 1000 );
+
+function changeColor(count){
 	var count1=document.getElementById("count1");
 	var dialog1=document.getElementById("dialog1");
 	var sinchoku=document.getElementById("sinchoku");

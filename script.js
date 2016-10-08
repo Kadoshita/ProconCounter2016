@@ -7,7 +7,7 @@ counter=setInterval(function(){
 	var br=document.getElementById("newline");
 	date = new Date();
 	Year = date.getFullYear();
-	countYear = new Date( 2016 , 9 , 9 ,00 ,41 ,00 );
+	countYear = new Date( 2016 , 9 , 9 ,15 ,10 ,00 );
 	tmp=countYear;
 	Msec = countYear.getTime() - date.getTime();
 

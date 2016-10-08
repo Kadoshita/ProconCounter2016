@@ -7,13 +7,10 @@ counter=setInterval(function(){
 	var br=document.getElementById("newline");
 	date = new Date();
 	Year = date.getFullYear();
-	countYear = new Date( 2016 , 9 , 8 ,00,00,00);
+	countYear = new Date( 2016 , 9 , 9 ,15 ,10 ,00 );
 	tmp=countYear;
 	Msec = countYear.getTime() - date.getTime();
 	
-	if(Msec<=1000){
-		clearInterval(counter);
-	}
 	countDay = Math.floor ( Msec / (1000*60*60*24) );
 	Msec -= ( countDay * (1000*60*60*24) );
 	
@@ -24,6 +21,12 @@ counter=setInterval(function(){
 	Msec -= ( countMin * (1000*60) );
 	
 	countSec = Math.floor ( Msec / 1000);
+	if(Msec<1000){
+		myDisp='間もなく結果発表です';
+		document.getElementById("countdown1").innerHTML = myDisp;
+		clearInterval(counter);
+		return;
+	}
 	myDisp = "";
 	if(mode=="bin"){
 		if(countDay != 0){
